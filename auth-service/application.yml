@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/authdb
+    username: postgres
+    password: postgres
+  ssl:
+    enabled: true
+    key-store: file:/certs/auth-service.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    key-alias: auth-service
+  auth:
+    issuer: https://auth.local
+    audience: skill-engine-platform
+    access-token-ttl: PT15M
+    refresh-token-ttl: P30D
+    frontend-base-url: https://localhost:5173
+    cors-allowed-origins: https://localhost:5173
+    google:
+      client-id: ${GOOGLE_CLIENT_ID}
+      client-secret: ${GOOGLE_CLIENT_SECRET}
+    sms:
+      provider: fake

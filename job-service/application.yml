@@ -1,0 +1,11 @@
+job:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/jobdb
+    username: postgres
+    password: postgres
+  ssl:
+    enabled: true
+    key-store: file:/certs/job-service.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    key-alias: job-service

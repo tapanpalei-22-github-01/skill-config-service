@@ -1,0 +1,12 @@
+skillengine:
+  provider: ollama
+  gemini:
+    api-key: ${GEMINI_API_KEY}
+    model: gemini-2.5-flash
+    base-url: https://generativelanguage.googleapis.com/v1beta
+  ollama:
+    base-url: http://host.docker.internal:11434
+    model: llama3.2:3b
+    think: false
+    num-predict: 800
+    timeout-seconds: 180

@@ -1,0 +1,7 @@
+gateway:
+  cors-allowed-origins: https://localhost:5173
+  max-body-bytes: 2097152
+  request-timeout-seconds: 120
+  rate-limit:
+    requests-per-minute: 600
+    auth-requests-per-minute: 60

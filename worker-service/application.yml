@@ -1,0 +1,7 @@
+worker:
+  skill-engine-url: https://skill-engine:8443
+  platform:
+    internal-key: ${PLATFORM_INTERNAL_KEY}
+    auth:
+      issuer: ${AUTH_ISSUER}
+      audience: ${AUTH_AUDIENCE}

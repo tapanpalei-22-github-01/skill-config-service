@@ -1,0 +1,10 @@
+platform:
+  internal-key: ${PLATFORM_INTERNAL_KEY}
+  auth:
+    issuer: ${AUTH_ISSUER}
+    audience: ${AUTH_AUDIENCE}
+admin:
+  auth-service-url: ${AUTH_SERVICE_URL:https://auth-service:8443}
+  worker-service-url: ${WORKER_SERVICE_URL:https://worker-service:8443}
+  job-service-url: ${JOB_SERVICE_URL:https://job-service:8443}
+  skill-engine-url: ${SKILL_ENGINE_URL:https://skill-engine:8443}
