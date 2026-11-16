@@ -1,8 +1,10 @@
-job:
+spring:
   datasource:
     url: jdbc:postgresql://postgres:5432/jobdb
     username: postgres
     password: postgres
+
+server:
   ssl:
     enabled: true
     key-store: file:/certs/job-service.p12
