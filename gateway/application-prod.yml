@@ -1,0 +1,18 @@
+# Production overrides for gateway.
+# Active only when the service runs with SPRING_PROFILES_ACTIVE=prod.
+gateway:
+  rate-limit:
+    requests-per-minute: 300
+    auth-requests-per-minute: 30
+  request-timeout-seconds: 60
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    root: INFO
+    com.skillengine: INFO

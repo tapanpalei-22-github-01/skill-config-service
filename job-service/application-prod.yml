@@ -1,0 +1,12 @@
+# Production overrides for job-service.
+# Active only when the service runs with SPRING_PROFILES_ACTIVE=prod.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    root: INFO
+    com.skillengine: INFO

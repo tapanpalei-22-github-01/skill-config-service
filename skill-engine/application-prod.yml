@@ -1,0 +1,18 @@
+# Production overrides for skill-engine.
+# Active only when the service runs with SPRING_PROFILES_ACTIVE=prod.
+skillengine:
+  provider: ollama
+  ollama:
+    model: llama3.2:3b
+    timeout-seconds: 120
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    root: INFO
+    com.skillengine: INFO
