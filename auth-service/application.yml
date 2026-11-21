@@ -17,8 +17,8 @@ auth:
   audience: skill-engine-platform
   access-token-ttl: PT15M
   refresh-token-ttl: P30D
-  frontend-base-url: https://localhost:5173
-  cors-allowed-origins: https://localhost:5173
+  frontend-base-url: https://localhost:3000
+  cors-allowed-origins: https://localhost:3000
   cookie-secure: true
   dev-endpoints-enabled: true
   email-enabled: true
